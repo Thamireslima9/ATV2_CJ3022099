@@ -46,6 +46,10 @@
             Console.WriteLine("0 valor atual dos seus investimentos é de:{0}", valor);
 
 
+            //lista (exercicio 1)
+
+
+
 
             
 

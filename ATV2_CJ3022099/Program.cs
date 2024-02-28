@@ -116,16 +116,42 @@
             //lista (Exercicio 9)
             Console.WriteLine();
 
-            */
             //lista (Exercicio 11)
             Console.WriteLine();
-
             float nume,quadra, cubo;
 
             Console.WriteLine("Digite um número:");
                 nume = float.Parse(Console.ReadLine());
 
-            quadra = Math.Pow
+            quadra = (float)Math.Pow(nume, 2);
+            cubo = (float)Math.Pow(nume, 3);
+
+            Console.WriteLine("O quadrado do número que você digitou é:{0}",quadra);
+            Console.WriteLine("O cubo do número que você digitou é:{0}", cubo);
+            */
+            //lista (Exercicio 12)
+            Console.WriteLine();
+            float h;
+            string gene, homens, mulheres;
+
+            Console.WriteLine("Qual seria o seu genêro?");
+            gene = Console.ReadLine();
+
+            Console.WriteLine("Qual seria a sua altura?");
+            h = float.Parse(Console.ReadLine());
+
+            if homens
+            {
+                homens = (72.7f * h) – 58;
+            }
+            else mulheres;
+            {
+                mulheres = (62.1f * h) - 44.7f;
+            }
+           
+
+
+
 
 
 

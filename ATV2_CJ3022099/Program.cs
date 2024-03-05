@@ -58,10 +58,27 @@
             mili = metros * 1000;
 
             Console.WriteLine("O valor em centimetros será de {0} e em milimetros será de {1}", centi, mili);
-
+            
             //Lista(exercicio 2)
             Console.WriteLine();
+            float Fahrenheit, Celcius;
 
+            Console.WriteLine("Nos informe a temperatura em graus  Fahrenheit: ");
+                Fahrenheit = float.Parse(Console.ReadLine());
+
+            Celcius = (Fahrenheit - 32.0f) * (5.0f / 9.0f);
+            Console.WriteLine("O  valor correspondente em graus Celsius é de {0:F2}",Celcius);
+
+            Console.WriteLine();
+            int fahr, Cel;
+
+            Console.WriteLine("Nos informe novamente a temperatura em graus  Fahrenheit: ");
+            fahr = int.Parse (Console.ReadLine());
+
+            Cel = (fahr - 32) * (5 / 9);
+            Console.WriteLine("O  valor correspondente em graus Celsius é de {0:F2}", Cel);
+
+            
             //lista (Exercicio 3)
             Console.WriteLine();
             float peso, altura, imc;
@@ -96,9 +113,16 @@
 
             Console.WriteLine("O resultado da media ponderada é:{0:F2}",media3);
 
-            
             //lista (Exercicio 5)
             Console.WriteLine();
+            float massa, volume, densidade;
+
+            Console.WriteLine("Para realizarmos a formula da densidade, precisamos que insira o valor da massa,aperte enter e insira o valor do volume:");
+                massa = float.Parse(Console.ReadLine());
+                volume = float.Parse(Console.ReadLine());
+
+            densidade = (massa / volume);
+            Console.WriteLine("A medida da densidade sobre as informações fornecidas por você é de: {0:F1}",densidade);
 
             //lista (Exercicio 7)
             Console.WriteLine();
@@ -112,10 +136,26 @@
 
             cotacao = real / dolar;
             Console.WriteLine("O valor correspondente em dólares é de:{0:F2}", cotacao);
-            
+            */
             //lista (Exercicio 9)
             Console.WriteLine();
+            int numer;
 
+            Console.WriteLine("Digite um número inteiro de 4 dígitos:");
+            numer = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Os dígitos do número são:");
+
+            int digitoMilhar = numer / 1000;
+            int digitoCentena = (numer % 1000) / 100;
+            int digitoDezena = (numer % 100) / 10;
+            int digitoUnidade = numer % 10;
+
+            Console.WriteLine(digitoMilhar);
+            Console.WriteLine(digitoCentena);
+            Console.WriteLine(digitoDezena);
+            Console.WriteLine(digitoUnidade);
+            /*
             //lista (Exercicio 11)
             Console.WriteLine();
             float nume,quadra, cubo;
@@ -131,49 +171,30 @@
             */
             //lista (Exercicio 12)
             Console.WriteLine();
-            float h;
-            string gene, homens, mulheres;
+            float altura, pesoIdeal;
+            char sexo;
 
-            Console.WriteLine("Qual seria o seu genêro?");
-            gene = Console.ReadLine();
+            Console.WriteLine("Digite a altura em metros:");
+            altura = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Qual seria a sua altura?");
-            h = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o sexo (M para masculino, F para feminino):");
+            sexo = char.Parse(Console.ReadLine());
 
-            if homens
+
+            if (sexo == 'M' || sexo == 'm')
             {
-                homens = (72.7f * h) – 58;
+                pesoIdeal = (72.7f * altura) - 58;
+                Console.WriteLine($"O peso ideal para um homem com altura {altura}m é {pesoIdeal}kg.");
             }
-            else mulheres;
+            else if (sexo == 'F' || sexo == 'f')
             {
-                mulheres = (62.1f * h) - 44.7f;
+                pesoIdeal = (62.1f * altura) - 44.7f;
+                Console.WriteLine($"O peso ideal para uma mulher com altura {altura}m é {pesoIdeal:F2}kg.");
             }
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            else
+            {
+                Console.WriteLine("Sexo inválido. Por favor, digite M para masculino ou F para feminino.");
+            }
         }
     }
 }

@@ -171,11 +171,11 @@
             
             //lista (Exercicio 12)
             Console.WriteLine();
-            float altura, pesoIdeal;
+            float altu, pesoIdeal;
             char sexo;
 
             Console.WriteLine("Digite a altura em metros:");
-            altura = float.Parse(Console.ReadLine());
+            altu = float.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o sexo (M para masculino, F para feminino):");
             sexo = char.Parse(Console.ReadLine());
@@ -183,15 +183,15 @@
 
             if (sexo == 'M' || sexo == 'm')
             {
-                pesoIdeal = (72.7f * altura) - 58;
-                Console.WriteLine($"O peso ideal para um homem com altura {altura}m é {pesoIdeal}kg.");
+                pesoIdeal = (72.7f * altu) - 58;
+                Console.WriteLine($"O peso ideal para um homem com altura {altu}m é {pesoIdeal}kg.");
             }
             else if (sexo == 'F' || sexo == 'f')
             {
-                pesoIdeal = (62.1f * altura) - 44.7f;
-                Console.WriteLine($"O peso ideal para uma mulher com altura {altura}m é {pesoIdeal:F2}kg.");
+                pesoIdeal = (62.1f * altu) - 44.7f;
+                Console.WriteLine($"O peso ideal para uma mulher com altura {altu}m é {pesoIdeal:F2}kg.");
             }
-            
+            //lista (Exercicio 13)
             Console.WriteLine(  );
 
             Console.WriteLine("O Github é uma “rede social dev” em que é possível armazenar e compartilhar projetos de desenvolvimento de software.\nO Git é um sistema de controle de versão de arquivos; em outras palavras, é responsável por guardar o histórico de alterações sempre que alguém modificar algum arquivo que está sendo monitorado por ele.\nDesta maneira, o Git e o GitHub são pilares fundamentais que auxiliam as equipes de desenvolvimento a controlar o versionamento de código, rastrear mudanças, colaborar de forma eficiente e garantir que o trabalho em equipe flua sem problemas.");

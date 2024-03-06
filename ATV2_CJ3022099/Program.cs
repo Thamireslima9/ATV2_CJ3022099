@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // projeto 1 
-            /*
+            
             float novo_salario, salario;
 
             Console.WriteLine("Qual é o salário do funcionário?");
@@ -136,7 +136,7 @@
 
             cotacao = real / dolar;
             Console.WriteLine("O valor correspondente em dólares é de:{0:F2}", cotacao);
-            */
+            
             //lista (Exercicio 9)
             Console.WriteLine();
             int numer;
@@ -155,7 +155,7 @@
             Console.WriteLine(digitoCentena);
             Console.WriteLine(digitoDezena);
             Console.WriteLine(digitoUnidade);
-            /*
+            
             //lista (Exercicio 11)
             Console.WriteLine();
             float nume,quadra, cubo;
@@ -168,7 +168,7 @@
 
             Console.WriteLine("O quadrado do número que você digitou é:{0}",quadra);
             Console.WriteLine("O cubo do número que você digitou é:{0}", cubo);
-            */
+            
             //lista (Exercicio 12)
             Console.WriteLine();
             float altura, pesoIdeal;
@@ -191,10 +191,22 @@
                 pesoIdeal = (62.1f * altura) - 44.7f;
                 Console.WriteLine($"O peso ideal para uma mulher com altura {altura}m é {pesoIdeal:F2}kg.");
             }
-            else
-            {
-                Console.WriteLine("Sexo inválido. Por favor, digite M para masculino ou F para feminino.");
-            }
+            
+            Console.WriteLine(  );
+
+            Console.WriteLine("O Github é uma “rede social dev” em que é possível armazenar e compartilhar projetos de desenvolvimento de software.\nO Git é um sistema de controle de versão de arquivos; em outras palavras, é responsável por guardar o histórico de alterações sempre que alguém modificar algum arquivo que está sendo monitorado por ele.\nDesta maneira, o Git e o GitHub são pilares fundamentais que auxiliam as equipes de desenvolvimento a controlar o versionamento de código, rastrear mudanças, colaborar de forma eficiente e garantir que o trabalho em equipe flua sem problemas.");
+            Console.WriteLine("\nAlguns códigos no git são:");
+            Console.WriteLine("Git Clone:Faz uma cópia idêntica da versão mais recente de um projeto em um repositório e a salva em seu computador.");
+            Console.WriteLine("Git Branch:Usando as branches, vários desenvolvedores conseguem trabalhar em paralelo no mesmo projeto simultaneamente. Podemos usar o comando git branch para criar, listar e excluir as branches.");
+            Console.WriteLine("Git checkout:Usamos para trocar de uma branch para outra. Também podemos usar o comando para fazer o checkout de arquivos e commits.");
+            Console.WriteLine("Git status:Nos dá todas as informações necessárias sobre a branch atual.");
+            Console.WriteLine("Git add:Precisamos usar o comando para incluir as alterações de um ou vários arquivos em nosso próximo commit.");
+            Console.WriteLine("Git commit:É como definir um ponto de verificação no processo de desenvolvimento. Você pode voltar a esse ponto mais tarde, se necessário.ELe salva suas alterações no espaço de trabalho local.");
+            Console.WriteLine("Git push:Faz o upload dos seus commits no repositório remoto.Entretanto, se a sua branch foi recém-criada, também é preciso fazer o upload da branch.O Git push somente faz o upload das alterações que já estão em um commit.");
+            Console.WriteLine("Git pull:É usado para obter as atualizações de um repositório remoto. Esse comando é uma combinação de git fetch e git merge, o que significa que, quando usamos git pull, ele recebe as atualizações do repositório remoto (git fetch) e aplica imediatamente as alterações mais recentes em seu espaço de trabalho local (git merge).");
+            Console.WriteLine("Git merge:Basicamente, integra sua branch com o recurso e todos os seus commits na branch de desenvolvimento (dev) ou na branch principal (master ou main). É importante lembrar que, primeiro, você precisa estar na branch específica na qual você quer fazer o merge de sua branch com o recurso.");
+            Console.WriteLine("Git revert:Permite desfazer algum commit e recuperar uma versão saudável, seja localmente, seja remotamente. ");
         }
+
     }
 }
